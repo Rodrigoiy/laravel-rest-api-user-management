@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rodrigo.iy</title>
 </head>
 <body>
-    <h1>OIIII</h1>
+    <h1>laravel-rest-api-user-management</h1>
 </body>
 </html>

@@ -1,0 +1,150 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_38fc94a359ff4b69b62775b13336b1d4
+  created: 1745080695561
+  modified: 1745080729986
+collection:
+  - name: API CRUD Laravel 11
+    meta:
+      id: fld_9b5c8fd26eae487a89aca24053ac52ee
+      created: 1745080742254
+      modified: 1745080742254
+      sortKey: -1745080742254
+    children:
+      - url: "{{ _[''].URL }}/api/users/7"
+        name: Listar
+        meta:
+          id: req_65a477485c084ae59b8dbb0a44da78e5
+          created: 1745080834653
+          modified: 1745090359273
+          isPrivate: false
+          sortKey: -1745080834653
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _[''].URL }}/api/users"
+        name: Visualizar
+        meta:
+          id: req_0599549f1f8e4f7aaac979c4ea73f8a0
+          created: 1745084377031
+          modified: 1745090397753
+          isPrivate: false
+          sortKey: -1745084377031
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _[''].URL }}/api/users"
+        name: Cadastrar
+        meta:
+          id: req_cab48f9cf7a04f86bdf3ab9c33ea640d
+          created: 1745085305357
+          modified: 1745089857042
+          isPrivate: false
+          sortKey: -1745084377131
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Rodrigo 77",
+            	"email": "rodrigo77@issamu.com.br",
+            	"password": "123456a"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _[''].URL }}/api/users/9"
+        name: Editar
+        meta:
+          id: req_aa96e716fe0c422b86fe9a5579180cf3
+          created: 1745089010394
+          modified: 1745089254463
+          isPrivate: false
+          sortKey: -1745084377231
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Rodrigo edit",
+            	"email": "rodrigo4@issamu.com.br",
+            	"password": "123456a"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _[''].URL }}/api/users/7"
+        name: Apagar
+        meta:
+          id: req_0034fb6d9a2141c58bfdb2cac100dc1d
+          created: 1745089796832
+          modified: 1745090404286
+          isPrivate: false
+          sortKey: -1745084377331
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b8fc4687cfe19021331da472f4a6cebbea9b93a2
+    created: 1745080695563
+    modified: 1745080695563
+environments:
+  name: Base Environment
+  meta:
+    id: env_b8fc4687cfe19021331da472f4a6cebbea9b93a2
+    created: 1745080695562
+    modified: 1745085087427
+    isPrivate: false
+  data:
+    "":
+      URL: http://127.0.0.1:8000
